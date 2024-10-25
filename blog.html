@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="web.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px; 
+            background-image: url(https://c8.alamy.com/comp/2AHCYR6/feedback-word-concepts-banner-customer-satisfaction-isolated-lettering-typography-idea-with-linear-icons-employee-engagement-reviews-and-advices-2AHCYR6.jpg);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            color: #170101;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #110808;
+            border-radius: 4px;
+            background: rgb(248, 255, 218);
+        }
+        button {
+            padding: 10px;
+            background-color: #16191d;
+            color: rgb(237, 194, 52);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #00b371;
+        }       
+        
+    </style>
+</head>
+<body>
+    <h2><p><i>At Fashion Store, we are passionate about providing you with an exceptional online shopping experience. Our platform offers a wide range of products, from Fashion and Clothing and we are trying to provide everythings like home goods and beauty products as soon as possible. We strive to cater to every shopper’s needs with quality, affordability, and convenience in mind.</i></p></h2><br>
+    <h1>Feedback Form</h1>
+    <form id="feedbackForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" required></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+    <div id="responseMessage"></div>
+    
+</body>
+</html>
